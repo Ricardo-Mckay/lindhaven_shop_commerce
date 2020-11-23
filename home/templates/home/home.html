@@ -1,0 +1,296 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block nav %}
+    <header>
+    <!-- Banner -->
+        <div class="text-light text-right banner">
+            <h1 class="display-4 text-center font-weight-bold heading">
+                Welcome to<br>
+                Lindhaven Coffee <i class="fas fa-mug-hot fa-1x"></i>
+            </h1>
+            <p class="main text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi dolorem eveniet expedita, explicabo id itaque laudantium nisi nostrum placeat
+                praesentium tenetur ut vitae voluptatem. Illo inventore quis sint tenetur vel!</p>
+        </div>
+    <!-- EO Banner -->
+    </header>
+
+    <!--ABOUT US-->
+    <section id="About-us about" class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-4">
+                    <h1 class="text-uppercase title-text display-3 text-light">
+                        About us
+                    </h1>
+                    <p class="text text-light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Blanditiis dolorum in iusto nemo officia, praesentium
+                        quos tenetur voluptas voluptate voluptatem.
+                    </p>
+                    <a href="#" class="btn hvr-right my-4 text-capitalize text-light">
+                        Know More
+                    </a>
+                </div>
+                <div class="col-md-6 about-images my-4 d-none d-lg-block">
+                    <img src="{% static 'home/images/nolan-issac-It0DCaCBr40-unsplash.jpg'%}" alt="" class="img-1 img-thumbnail about-img">
+                    <img src="{% static 'home/images/nathan-dumlao-I_394sxx0ec-unsplash.jpg'%}" alt="" class="img-2 img-thumbnail about-img">
+                    <img src="{% static 'home/images/nolan-issac-It0DCaCBr40-unsplash.jpg'%}" alt="" class="img-3 img-thumbnail about-img">
+                    <img src="{% static 'home/images/ben-libby-3jW_5qHlFBE-unsplash.jpg'%}" alt="" class="img-4 img-thumbnail about-img">
+                    <img src="{% static 'home/images/ben-libby-3jW_5qHlFBE-unsplash.jpg'%}" alt="" class="img-5 img-thumbnail about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EO ABOUT US-->
+
+    <!--- TAB --->
+    <section class="my-50">
+    <div class="container">
+        <div class="content-4">
+            <ul class="nav" role="tablist">
+                <li class="nav-item nav-tabs">
+                    <a href="#pie" class="active tab-item" role="tab" data-toggle="tab">
+                        <i class="fas fa-apple-alt"></i>
+                        <span>Apple Pie</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-tabs">
+                    <a href="#bread" class=" tab-item" role="tab" data-toggle="tab">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Home Made Bread</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-tabs">
+                    <a href="#candy" class="tab-item" role="tab" data-toggle="tab">
+                        <i class="fas fa-candy-cane"></i>
+                        <span>Sugar Free Candy</span>
+                    </a>
+                </li>
+                   <li class="nav-item nav-tabs">
+                    <a href="#cookie" class="tab-item" role="tab" data-toggle="tab">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Chocolate Cookies</span>
+                    </a>
+                </li>
+            </ul>
+            <!-------------------- TABS ----------------------->
+            <div class="tab-content">
+                <div class="active tab-pane" role="tab-panel" id="pie">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3 offset-md-1">
+                            <h4>Home Made Apple Pie </h4>
+                        </div>
+                        <div class="col-md-7">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aliquam architecto dicta doloremque fugiat nemo nobis
+                                quidem quis! Eius, ratione vitae?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="bread">
+                    <div class="row justify-content-me-center">
+                        <div class="col-md-3 offset-md-1">
+                            <h4>Home Made Organic Bread</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Aliquid aspernatur facere illo ipsam maiores
+                                molestias odio repellendus tenetur veritatis
+                                voluptate?</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Doloremque enim error inventore, porro quia
+                                quos repellat sint tempore tenetur voluptatibus!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="candy">
+                    <div class="row justify-content md-center">
+                        <div class="col-md4 offset-md-1">
+                            <h4>Sugar Free Candy</h4>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-10 offset-md-1">
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Doloremque id iste itaque
+                                    maxime minus mollitia nostrum pariatur quae
+                                    recusandae sint?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="cookie">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <h4>Home Made Chocolate Cookies</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 offset-md-1">
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Ab deserunt ipsam iste
+                                    neque numquam perspiciatis.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Asperiores error.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Asperiores error, quos!
+                                    Architecto qui reprehenderit suscipit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+     <!----------------------- EO TAB -------------------------->
+
+    <!-----------BACKGROUND VIDEO ------------------>
+    <section class="most purchased p-5">
+    <div class="video-container">
+        <video class="bg-video" autoplay muted loop>
+        <source src="{% static 'home/images/Pouring coffee ( 720 X 1280 ).mp4' %}" >
+        </video>
+    </div>
+    <div class="contaier-fluid">
+       <div class="row">
+           <div class="col text-center py-5">
+               <h1 class="text-uppercase text-color font-weight-bold">
+                   MOST PURCHASED
+               </h1>
+           </div>
+       </div>
+        <!-----------EO BACKGROUND VIDEO ------------------>
+        <!------------ CARDS ---------->
+        <div class="row justify-content-around align-items-center">
+            <div class="col-xl-3 col-lg-4 col-sm rotate">
+                <div class="card text-center mb-3 coffee-card">
+                    <div class="card-header">
+                        <h4 class="font-weight-light title-text">Espresso</h4>
+                    </div>
+                <div class="card-body">
+                    <img src="{% static 'home/images/ben-libby-3jW_5qHlFBE-unsplash.jpg'%}" class="img-fluid rounded">
+                </div>
+                    <div class="card-footer">
+                        Mith Muffin
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h1 class="text-uppercase font-weight-light">only for</h1>
+                            <h3 class="mb-3">R25</h3>
+                            <a href="#" class="btn my-4 text-capitalize">order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ CARDS ---------->
+            <div class="col-xl-3 col-lg-4 col-sm rotate">
+                <div class="card text-center mb-3 coffee-card">
+                    <div class="card-header">
+                        <h4 class="font-weight-light title-text">Frape`</h4>
+                    </div>
+                <div class="card-body">
+                    <img src="{% static 'home/images/ben-libby-3jW_5qHlFBE-unsplash.jpg'%}" class="img-fluid rounded">
+                </div>
+                    <div class="card-footer">
+                        Mith Muffin
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h1 class="text-uppercase font-weight-light">only for</h1>
+                            <h3 class="mb-3">R45</h3>
+                            <a href="#" class="btn my-4 text-capitalize">order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ CARDS ---------->
+            <div class="col-xl-3 col-lg-4 col-sm rotate">
+                <div class="card text-center mb-3 coffee-card">
+                    <div class="card-header">
+                        <h4 class="font-weight-light title-text">Like My Soul</h4>
+                    </div>
+                <div class="card-body">
+                    <img src="{% static 'home/images/ben-libby-3jW_5qHlFBE-unsplash.jpg'%}" class="img-fluid rounded">
+                </div>
+                    <div class="card-footer">
+                        Mith Muffin
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h1 class="text-uppercase font-weight-light">only for</h1>
+                            <h3 class="mb-3">R30</h3>
+                            <a href="#" class="btn my-4 text-capitalize">order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------ EO CARDS ---------->
+        </div>
+    </div>
+    </section>
+
+
+    <!--------CONTACT US ---------->
+    <section class="contact">
+    <div class="container">
+        <div class="text-center py-5">
+            <h2 class="py-3">Contact Us</h2>
+            <div class="mx-auto heading-line"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <!------GOOGLE MAPS--------->
+                <div id="map-container-google-1" class="z-depth-1-half map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.9497179651535!2d28.04834!3d-26.100559999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957330aec07f81%3A0x9fd44eb0accfe4dd!2s108%20Elizabeth%20Ave%2C%20Parkmore%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1600100573524!5m2!1sen!2sza" width="100%" height="420px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+            </div>
+            <form class="col-lg-6">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email" aria-describedby="emailHint" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" type="text" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Enter personal Messsage Here" rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn my-4 btn-lg">Submit</button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <!----------- EO CONTACT US ------------>
+
+    <!------------- FOOTER ------------------>
+    <footer>
+        <div class="text-center">
+        <h4 class="font-weight-bold">Follow Me</h4>
+        <div class="d-flex flex-row justify-content-center">
+            <span><i class="fab fa-facebook-square fa-4x"></i></span>
+            <span><i class="fab fa-instagram-square fa-4x"></i></span>
+            <span><i class="fab fa-snapchat-square fa-4x"></i></span>
+            <span><i class="fab fa-twitter-square fa-4x"></i></span>
+        </div>
+            <p>&copy; Copy rights owned by RCM'er Tyme :-)</p>
+            <div class="top">
+                <a href="#"><i class="fas fa-arrow-circle-up fa-4x"></i> </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+{% endblock %}
